@@ -7,6 +7,7 @@ import Section from '../../layout/Section/Section';
 import PageTitle from '../../common/PageTitle/PageTitle';
 import SideImage from '../../common/SideImage/SideImage';
 import DetailsBox from '../../common/DetailsBox/DetailsBox';
+import OrderForm from '../../features/OrderForm/OrderFormContainer';
 import DetailsImage from '../../common/DetailsImage/DetailsImage';
 import List from '../../common/List/List';
 import ListItem from '../../common/ListItem/ListItem';
@@ -42,8 +43,8 @@ const Trip = ({error, name, image, cost, days, description, country, intro}) => 
       <Grid>
         <Row>
           <Col xs={12}>
-            <PageTitle text='Trip details' />
-            {HTMLParser(description)}
+            <PageTitle text='Trip options' />
+            <OrderForm tripCost={cost} />
           </Col>
         </Row>
       </Grid>

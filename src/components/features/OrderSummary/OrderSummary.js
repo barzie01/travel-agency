@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './OrderSummary.scss'
+import styles from './OrderSummary.module.scss'
 import {calculateTotal} from '../../../utils/calculateTotal.js';
 import {formatPrice} from '../../../utils/formatPrice.js';
 
